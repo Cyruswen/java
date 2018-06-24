@@ -38,4 +38,19 @@ public class ContextMenuActivity extends Activity{
         menu.add(0, ITEM4, 0, "绿色背景");
         menu.add(0, ITEM5, 0, "白色背景");
     }
+
+    public boolean onContextItemSelected(MenuItem item){
+        switch(item.getItemId()){
+        case ITEM3:
+            myTv.setBackgroundColor(Color.RED);
+            break;
+        case ITEM4:
+            myTv.setBackgroundColor(Color.GREEN);
+            break;
+        case ITEM5:
+            myTv.setBackgroundColor(Color.WHITE);
+            break;
+        }
+        return true;
+    }
 }
