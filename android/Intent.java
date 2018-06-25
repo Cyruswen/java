@@ -2,17 +2,15 @@ public class Activity1 extends Activity{
     public void onCreate(Bundle savedInstanceState){
         RadioGroup RG_OS;
         RadioButton RG_OS_RB1, RG_OS_RB2, RG_OS_RB3;
-        Button button_submit, button_back;
+        Button button_submit;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity1);
         
         RG_OS = (RadioGroup)findViewById(R.id.RG_OS);
-        RG_OS_RB1 = (RadioButton)findViewById(R.id.RG_OS_RB1);
-        RG_OS_RB2 = (RadioButton)findViewById(R.id.RG_OS_RB2);
+        RG_OS_RB1 = (RadioButton)findViewById(R.id.RG_OS_RB2);
         RG_OS_RB3 = (RadioButton)findViewById(R.id.RG_OS_RB3);
         button_submit = (Button)findViewById(R.id.button_submit);
-        button_back = (Button)findViewById(R.id.button_back);
 
         button_submit.setOnClickListener(new OnClickListener());
     }
@@ -21,7 +19,7 @@ public class Activity1 extends Activity{
         public void onClick(View v){
             Intent myIntent = new Intent();
 
-            myIntent.setClass(Activity1.this, Actiity2.class);
+            myIntent.setClass(Activity1.this, Activity2.class);
           
             //启动另外一个Activity
             Activity1.this.startActivity(myIntent);
