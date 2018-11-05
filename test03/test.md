@@ -1,1 +1,1 @@
-![]（.\test03\test.jpg)
+<div align="center"> <img src="./test.img" width="600"/> </div><br>
