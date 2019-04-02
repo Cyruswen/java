@@ -36,10 +36,15 @@ public class Main {
 		//Father fa = new Child();
 		//fa.print();
 		//Child ch = (Child) new Father();
+		/*
 		Child child = new Child();
 		child.logIn();
 		Father fa = new Child();
 		fa.logOut();
 		fa.logIn();
+		*/
+		AbstractTest abstractTest = AbstractTest.getInstance();
+		abstractTest.setName("kaikai");
+		abstractTest.getPersonInfo();
 	}
 }
